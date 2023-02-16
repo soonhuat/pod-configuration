@@ -282,8 +282,8 @@ async function downloadurl(url, target) {
       got.stream(url, {
         timeout: {
           lookup: 100,
-          connect: 1000,
-          secureConnect: 1000,
+          connect: 5000,
+          secureConnect: 5000,
           socket: 60000,
           send: 10000,
           response: 30000
