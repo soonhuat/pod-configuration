@@ -6,8 +6,7 @@ RUN npm install
 RUN groupmod -g 1001 node \
   && usermod -u 1001 -g 1001 node
 
-RUN useradd -u 1000 operatorjob
-USER operatorjob
+USER 1000:2000
 
 COPY . .
 
